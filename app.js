@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	{ name: 'Nongnuch Artrith', affiliation: 'Utrecht', image: './img/Speakers/Nongnuch Artrith.jpeg' , profileUrl: 'https://www.uu.nl/staff/NArtrith',  email: 'n.artrith@uu.nl'},
 	{ name: 'Hao Li', affiliation: 'Tohoku', image: './img/Speakers/Hao Li.jpeg' , profileUrl: 'https://www.wpi-aimr.tohoku.ac.jp/en/research/researcher/li_h.html',  email: 'li.hao.b8@tohoku.ac.jp'},
 	{ name: 'Shijing Sun', affiliation: 'UW', image: './img/Speakers/Shijing Sun.jpeg' , profileUrl: 'https://www.me.washington.edu/facultyfinder/shijing-sun',  email: 'shijing@uw.edu'},
-	{ name: 'Chong Liu', affiliation: 'UCLA', image: './img/Speakers/Chong Liu.jpg' , profileUrl: 'https://www.chemistry.ucla.edu/directory/liu-chong/',  email: 'chongliu@chem.ucla.edu'}
+	{ name: 'Chong Liu', affiliation: 'UCLA', image: './img/Speakers/Chong Liu.jpeg' , profileUrl: 'https://www.chemistry.ucla.edu/directory/liu-chong/',  email: 'chongliu@chem.ucla.edu'}
 ].sort((a, b) => a.name.localeCompare(b.name));;
   
 
