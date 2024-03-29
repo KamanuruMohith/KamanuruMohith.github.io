@@ -9,6 +9,13 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    line-height: 1.5;
+}
 a {
 	text-decoration: none;
 }
@@ -242,15 +249,15 @@ p {
   }
   
 
-/* Home Section */
-#home {
+/* Hero Section */
+#hero {
 	background-image: url(./img/bg3.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
-#home::after {
+#hero::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -261,13 +268,13 @@ p {
 	opacity: 0.7;
 	z-index: -1;
 }
-#home .home {
+#hero .hero {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#home h1 {
+#hero h1 {
 	display: block;
 	width: fit-content;
 	font-size: 1rem;
@@ -276,17 +283,17 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
-#home h1:nth-child(1) {
+#hero h1:nth-child(1) {
 	animation-delay: 1s;
 }
-#home h1:nth-child(2) {
+#hero h1:nth-child(2) {
 	animation-delay: 2s;
 }
-#home h1:nth-child(3) {
+#hero h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
-#home h1 span {
+#hero h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -296,17 +303,17 @@ p {
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
-#home h1:nth-child(1) span {
+#hero h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
-#home h1:nth-child(2) span {
+#hero h1:nth-child(2) span {
 	animation-delay: 1.5s;
 }
-#home h1:nth-child(3) span {
+#hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
 
-/* End Home Section */
+/* End Hero Section */
 
 /* Services Section */
 #services .services {
@@ -488,43 +495,43 @@ p {
 }
 /* End Projects section */
 
-/* Venue Section */
-#venue .venue {
+/* About Section */
+#about .about {
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-#venue .col-left {
+#about .col-left {
 	width: 250px;
 	height: 360px;
 }
-#venue .col-right {
+#about .col-right {
 	width: 100%;
 }
-#venue .col-right h2 {
+#about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
-#venue .col-right p {
+#about .col-right p {
 	margin-bottom: 20px;
 }
-#venue .col-right .cta {
+#about .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
-#venue .col-left .venue-img {
+#about .col-left .about-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
-#venue .col-left .venue-img::after {
+#about .col-left .about-img::after {
 	content: '';
 	position: absolute;
 	left: -33px;
@@ -534,20 +541,20 @@ p {
 	border: 7px solid rgb(20, 157, 220);
 	z-index: -1;
 }
-/* End Venue Section */
+/* End About Section */
 
-/* About Section */
-#about .about {
+/* contact Section */
+#contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
 }
-#about .about-items {
+#contact .contact-items {
 	/* max-width: 400px; */
 	width: 100%;
 }
-#about .about-item {
+#contact .contact-item {
 	width: 80%;
 	padding: 20px;
 	text-align: center;
@@ -561,25 +568,25 @@ p {
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: 0.3s ease box-shadow;
 }
-#about .about-item:hover {
+#contact .contact-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
 }
-#about .icon {
+#contact .icon {
 	width: 70px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
-#about .about-info h1 {
+#contact .contact-info h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
 	margin-bottom: 5px;
 }
-#about .about-info h2 {
+#contact .contact-info h2 {
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
 }
-/*End about Section */
+/*End contact Section */
 
 /* Footer */
 #footer {
@@ -665,11 +672,11 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Home */
-	#home h1 {
+	/* Hero */
+	#hero h1 {
 		font-size: 4rem;
 	}
-	/* End Home */
+	/* End Hero */
 
 	/* Services Section */
 	#services .service-bottom .service-item {
@@ -699,64 +706,64 @@ p {
 	}
 	/* End Project */
 
-	/*Venue */
-	#venue .venue {
+	/* About */
+	#about .about {
 		flex-direction: row;
 	}
-	#venue .col-left {
+	#about .col-left {
 		width: 600px;
 		height: 400px;
 		padding-left: 60px;
 	}
-	#venue .venue .col-left .venue-img::after {
+	#about .about .col-left .about-img::after {
 		left: -45px;
 		top: 34px;
 		height: 98%;
 		width: 98%;
 		border: 10px solid rgb(20, 157, 220);
 	}
-	#venue .col-right {
+	#about .col-right {
 		text-align: left;
 		padding: 30px;
 	}
-	#venue .col-right h1 {
+	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End Venue */
+	/* End About */
 
-	/* about  */
-	#about .about {
+	/* contact  */
+	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
 	}
-	#about .about-items {
+	#contact .contact-items {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		margin: 0;
 	}
-	#about .about-item {
+	#contact .contact-item {
 		width: 30%;
 		margin: 0;
 		flex-direction: row;
 	}
-	#about .about-item .icon {
+	#contact .contact-item .icon {
 		height: 100px;
 		width: 100px;
 	}
-	#about .about-item .icon img {
+	#contact .contact-item .icon img {
 		object-fit: contain;
 	}
-	#about .about-item .about-info {
+	#contact .contact-item .contact-info {
 		width: 100%;
 		text-align: left;
 		padding-left: 20px;
 	}
-	/* End about  */
+	/* End contact  */
 }
 /* End Media Query For Tablet */
 
@@ -851,8 +858,8 @@ p {
 		color: #0056b3; 
 	}
 	
-	/* about Details */
-	.modal-content .about-detail {
+	/* Contact Details */
+	.modal-content .contact-detail {
 		font-size: 14px; 
 		color: #666; 
 	}
@@ -914,4 +921,123 @@ p {
 	
 
 }
+
+.schedule-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.day-schedule {
+    flex: 1 1 400px;
+    max-width: calc(50% - 20px);
+    background-color: #e3f2fd; /* Uniform background color for day schedules */
+    padding: 25px; /* Uniform padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #039be5; /* Accent border */
+    overflow-y: auto;
+    height: 600px; /* Fixed height for scrolling */
+    position: relative;
+    margin-bottom: 25px; /* Bottom margin for spacing between day schedules */
+    font-size: 16px; /* Uniform font size for readability */
+}
+
+.day-title {
+    font-size: 35px; /* Larger title font size */
+    color: #1f204e;
+    margin-bottom: 25px; /* Increased spacing below title */
+    text-align: center;
+    font-weight: bold;
+}
+
+.events {
+    position: relative;
+    padding-left: 30px; /* Left padding for alignment with the timeline */
+}
+
+.time-line {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #1f204e;
+}
+
+.event-group {
+    margin-bottom: 35px; /* Increased spacing between session groups */
+}
+
+.session-heading {
+    font-size: 18px; /* Font size for session headings */
+    background-color: #1f204e; /* Background color for session headings */
+    color: #ffffff; /* Text color for session headings */
+    padding: 8px 12px; /* Padding around session headings */
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px; /* Bottom margin for spacing after session headings */
+}
+
+.chair {
+    font-size: 17px; /* Font size for chairs/moderators */
+    color: #1c2b61; /* Text color for chairs/moderators */
+    font-weight: bold;
+    display: block; /* Ensure it's on a new line */
+    margin-bottom: 10px; /* Bottom margin for spacing after chair/moderator name */
+}
+
+.sub-session {
+    margin-left: 25px; /* Indentation for sub-sessions */
+    padding-left: 15px; /* Padding for alignment within sub-sessions */
+    border-left: 2px solid #81d4fa; /* Visual cue for sub-session grouping */
+    margin-bottom: 15px; /* Spacing between sub-sessions */
+}
+
+.time-event, .time, .participant {
+    font-size: 16px; /* Uniform font size for times and participants */
+    margin-bottom: 8px; /* Spacing between time/participant entries */
+}
+
+.day-schedule::-webkit-scrollbar {
+    width: 6px;
+}
+
+.day-schedule::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.day-schedule::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.day-schedule::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .schedule-wrapper {
+        flex-direction: column;
+    }
+
+    .day-schedule {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .events {
+        padding-left: 20px;
+    }
+
+    .time-line {
+        left: 15px;
+    }
+}
 /* End  Media Query For Desktop */
+
+.sub-section {
+	margin-left: 30px; /* Adjust the indentation as needed */
+  }
+

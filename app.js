@@ -158,7 +158,7 @@ function showHotelDetails(event) {
   
 
   
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
 	const agenda = {
 	  day1: [
 		"Opening Remarks",
@@ -182,7 +182,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	  const container = document.getElementById(containerId);
 	  let content = `<h2>${containerId === 'day1Card' ? 'Day 1' : 'Day 2'}</h2><ul>`;
 	  dayItems.forEach(item => {
-		content += `<li>${item}</li>`;
+		// Check if item is a sub-section
+		const isSubSection = ["Foundational Models", "Materials & Knowledge Discovery", "Data & Software Infrastructures", "Future Labs"].includes(item);
+		content += `<li${isSubSection ? ' class="sub-section"' : ''}>${item}</li>`;
 	  });
 	  content += '</ul>';
 	  container.innerHTML = content;
@@ -191,4 +193,5 @@ document.addEventListener('DOMContentLoaded', function() {
 	renderAgendaDay('day1Card', agenda.day1);
 	renderAgendaDay('day2Card', agenda.day2);
   });
+  
   
