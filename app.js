@@ -210,20 +210,20 @@ function showHotelDetails(event) {
 	  ]
 	};
   
-	function renderAgendaDay(containerId, dayItems) {
-	  const container = document.getElementById(containerId);
-	  let content = `<h2>${containerId === 'day1Card' ? 'Day 1' : 'Day 2'}</h2><ul>`;
-	  dayItems.forEach(item => {
-		// Check if item is a sub-section
-		const isSubSection = ["Foundational Models", "Materials & Knowledge Discovery", "Data & Software Infrastructures", "Future Labs"].includes(item);
-		content += `<li${isSubSection ? ' class="sub-section"' : ''}>${item}</li>`;
-	  });
-	  content += '</ul>';
-	  container.innerHTML = content;
-	}
+	// function renderAgendaDay(containerId, dayItems) {
+	//   const container = document.getElementById(containerId);
+	//   let content = `<h2>${containerId === 'day1Card' ? 'Day 1' : 'Day 2'}</h2><ul>`;
+	//   dayItems.forEach(item => {
+	// 	// Check if item is a sub-section
+	// 	const isSubSection = ["Foundational Models", "Materials & Knowledge Discovery", "Data & Software Infrastructures", "Future Labs"].includes(item);
+	// 	content += `<li${isSubSection ? ' class="sub-section"' : ''}>${item}</li>`;
+	//   });
+	//   content += '</ul>';
+	//   container.innerHTML = content;
+	// }
   
-	renderAgendaDay('day1Card', agenda.day1);
-	renderAgendaDay('day2Card', agenda.day2);
+	// renderAgendaDay('day1Card', agenda.day1);
+	// renderAgendaDay('day2Card', agenda.day2);
   });
   
   
