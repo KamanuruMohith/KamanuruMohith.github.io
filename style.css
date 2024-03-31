@@ -333,6 +333,7 @@ p {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 20px;
+	transition: max-height 0.3s ease;
 }
 #services .card {
 	box-shadow: 0 4px 8px 0 rgba(29, 71, 222, 0.2);
@@ -361,7 +362,7 @@ p {
   }
   
   .card-container {
-	padding: 2px 16px;
+	padding: 2px 10px;
   }
  
   .card-container h2 {
@@ -501,7 +502,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	/* padding: 100px 20px; */
 }
 #about .col-left {
 	width: 250px;
@@ -527,7 +528,7 @@ p {
 }
 #about .col-left .about-img {
 	height: 100%;
-	width: 100%;
+	width: 70%;
 	position: relative;
 	border: 10px solid white;
 }
@@ -936,13 +937,14 @@ p {
     background-color: #e3f2fd; /* Uniform background color for day schedules */
     padding: 25px; /* Uniform padding */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px 0 rgba(29, 71, 222, 0.2);
     border-left: 5px solid #039be5; /* Accent border */
     overflow-y: auto;
     height: 600px; /* Fixed height for scrolling */
     position: relative;
     margin-bottom: 25px; /* Bottom margin for spacing between day schedules */
     font-size: 16px; /* Uniform font size for readability */
+	border: 4px solid #3576c1; 
 }
 
 .day-title {
@@ -1010,11 +1012,11 @@ p {
 }
 
 .day-schedule::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #375994;
 }
 
 .day-schedule::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #04243f;
 }
 
 @media (max-width: 768px) {
@@ -1041,3 +1043,198 @@ p {
 	margin-left: 30px; /* Adjust the indentation as needed */
   }
 
+/* ... your existing CSS ... */
+
+#speakerCards {
+	/* Adjust max-height so 2.5 rows are visible */
+	max-height: 760px; /* e.g., if each card (with margin) is 320px tall */
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+  }
+  
+  #toggleSpeakerCards {
+	background-color: #3576c1;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin-top: 20px;
+	display: block; /* to make it a block-level element */
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  #toggleSpeakerCards:hover {
+	background-color: #09223b; /* Darker shade on hover */
+	transform: translateY(-2px); /* Slight lift effect */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  #toggleSpeakerCards:active {
+	background-color: #1d4561; /* Even darker shade when clicked */
+	transform: translateY(1px); /* Push down effect */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow for depth */
+  }
+
+
+  .hotel-tabs {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .tab {
+	cursor: pointer;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 5px;
+	text-align: center;
+	flex-grow: 1; /* To distribute space evenly */
+  }
+  
+  .tab img {
+	width: 100%; /* Set width to fit the tab, may need adjustment */
+	max-height: 100px; /* Set a max-height for images */
+	object-fit: cover; /* Keep aspect ratio of image */
+  }
+  
+  .tab h3 {
+	font-size: 1rem; /* Adjust size as necessary */
+	margin: 5px 0; /* Space between the title and the image */
+  }
+  
+  .tab p {
+	font-size: 0.8rem; /* Smaller text for the contact details */
+	margin: 5px 0; /* Space between paragraphs */
+  }
+  
+  .tab p a {
+	color: #3576c1; /* Style for email links */
+  }
+  
+  /* Optional: Style for hover effect on tabs */
+  .tab:hover {
+	background-color: #f4f4f4;
+	transition: background-color 0.3s ease;
+  }
+  
+  /* Optional: Style to improve the look of the email link when printed */
+  @media print {
+	.tab p a::after {
+	  content: " (" attr(href) ")";
+	}
+  }
+  
+  
+
+  /* General styles for about section */
+.about .col-right {
+	max-width: 700px;
+	margin: -20px;
+  }
+  
+  .hotels-heading {
+	font-size: 3em;
+	color: #3576c1;
+	text-align: center;
+	margin: 20px 0;
+  }
+  
+  .hotel-tabs {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+  }
+  
+  .tab {
+	cursor: pointer;
+	background-color: #f7f7f7;
+	border-left: 5px solid #3576c1; /* Blue accent on the side */
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	text-align: left;
+  }
+  
+  .tab:hover {
+	background-color: #e7e7e7;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tab h3 {
+	color: #3576c1; /* Blue theme for titles */
+	margin-bottom: 10px;
+	font-size: 1.2em;
+  }
+  
+  .hotel-info {
+	font-size: 1.2em;
+  }
+  
+  .hotel-info span {
+	display: block; /* Stack info vertically */
+	margin: 5px 0;
+  }
+  
+  .hotel-info a {
+	color: #3576c1;
+	text-decoration: none;
+  }
+  
+  .hotel-info a:hover {
+	text-decoration: underline;
+  }
+  
+  .hotel-info i {
+	color: #3576c1;
+	width: 20px; /* Ensure icons align nicely */
+  }
+  
+  /* Responsive behavior for smaller screens */
+  @media (max-width: 768px) {
+	.hotel-tabs {
+	  flex-direction: column;
+	}
+	.tab {
+	  width: 100%;
+	}
+  }
+  
+
+  .contact.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 20px;
+	text-align: center;
+  }
+ 
+  
+  .about-workshop h2 {
+	font-size: 2em;
+	color: #333; /* A darker color for the subtitle */
+	margin-bottom: 20px;
+  }
+  
+  .about-workshop p {
+	font-size: 1em;
+	line-height: 1.6; /* For better readability */
+	color: #555; /* A softer color for the body text */
+	max-width: 800px; /* Max width for optimal reading length */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left; /* Left-align the paragraph text */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+	.section-title {
+	  font-size: 2em; /* Slightly smaller title on small screens */
+	}
+  
+	.about-workshop p {
+	  font-size: 0.9em; /* Slightly smaller paragraph text on small screens */
+	}
+  }
+  

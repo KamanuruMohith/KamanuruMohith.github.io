@@ -26,10 +26,11 @@ menu_item.forEach((item) => {
 
 document.addEventListener('DOMContentLoaded', function() {
   const organizers = [
-	{ name: 'HongLiang Xin', desc: 'Lorem ipsum dolor sit amet consectetur' },
-	{ name: 'John Kitchin', desc: 'Lorem ipsum dolor sit amet consectetur' },
-	{ name: 'Nuria Lopez', desc: 'Lorem ipsum dolor sit amet consectetur' },
-	{ name: 'Neil Schweitzer', desc: 'Lorem ipsum dolor sit amet amet consectetur' }
+	{ name: 'HongLiang', lName: 'Xin', affiliation: 'VT', image: './img/Hongliang Xin.jpeg', profileUrl: 'https://che.vt.edu/People/faculty/Xin.html', email: 'hxin@vt.edu' },
+	{ name: 'John', lName: 'Kitchin', affiliation: 'CMU', image: './img/John Kitchin.png', profileUrl: 'https://engineering.cmu.edu/directory/bios/kitchin-john.html',  email: 'jkitchin@andrew.cmu.edu'},
+	{ name: 'Núria', lName: 'López', affiliation: 'ICIQ', image: './img/Nuria Lopez.jpeg', profileUrl: 'https://www.iciq.org/research/research_group/prof-nuria-lopez/',  email: 'nlopez@iciq.es' },
+	{ name: 'Neil', lName: 'Schweitzer', affiliation: 'Northwestern', image: './img/Neil Schweitzer.jpeg', profileUrl: 'https://www.mccormick.northwestern.edu/research-faculty/directory/affiliated/schweitzer-neil.html',  email: 'neil.schweitzer@northwestern.edu' }
+	
   ];
 
   const speakers = [
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	{ name: 'Suljo', lName: 'Linic', affiliation: 'Michigan', image: './img/Speakers/Suljo Linic.jpeg' , profileUrl: 'https://che.engin.umich.edu/people/linic-suljo/',  email: 'linic@umich.edu'},
 	{ name: 'Teodoro', lName: 'Laino', affiliation: 'IBM Research, Zurich', image: './img/Speakers/Teodoro Laino.jpeg' , profileUrl: 'https://research.ibm.com/people/teodoro-laino',  email: 'teo@zurich.ibm.com'},
 	{ name: 'Tian', lName: 'Xie', affiliation: 'Microsoft, UK', image: './img/Speakers/Tian Xie.jpeg' , profileUrl: 'https://www.microsoft.com/en-us/research/people/tianxie/',  email: 'tianxie@microsoft.com'},
-	{ name: 'Xiaonan', lName: 'Wang', affiliation: 'Tsinghua, China', image: './img/Speakers/Xiaonan Wang.webp' , profileUrl: 'https://www.smartsystemsengineering.com/',  email: 'wangxiaonan@tsinghua.edu.cn'},
+	{ name: 'Xiaonan', lName: 'Wang', affiliation: 'Tsinghua, China', image: './img/Speakers/Xiaonan Wang.jpeg' , profileUrl: 'https://www.smartsystemsengineering.com/',  email: 'wangxiaonan@tsinghua.edu.cn'},
 	{ name: 'Wendy', lName: 'Shaw', affiliation: 'PNNL', image: './img/Speakers/Wendy Shaw.jpeg' , profileUrl: 'https://www.pnnl.gov/people/wendy-shaw',  email: 'wendy.shaw@pnnl.gov'},
 	{ name: 'Zack', lName: 'Ulissi', affiliation: 'Meta', image: './img/Speakers/Zack Ulissi.jpeg' , profileUrl: 'https://zulissi.github.io/',  email: 'zulissi@meta.com'},
 	{ name: 'Nongnuch', lName: 'Artrith', affiliation: 'Utrecht', image: './img/Speakers/Nongnuch Artrith.jpeg' , profileUrl: 'https://www.uu.nl/staff/NArtrith',  email: 'n.artrith@uu.nl'},
@@ -80,6 +81,7 @@ const presenters = [
 
 function renderCards(containerId, items) {
 	const container = document.getElementById(containerId);
+	container.innerHTML = '';
 	items.forEach(item => {
 	  const card = document.createElement('div');
 	  card.classList.add('card');
@@ -102,14 +104,27 @@ function renderCards(containerId, items) {
   }
   
 
-//   renderCards('organizerCards', organizers);
+  renderCards('organizerCards', organizers);
   renderCards('speakerCards', speakers);
   renderCards('presenterCards', presenters);
+  
   
   // Add click event listener to the "Show Nearby Hotels" link
   document.getElementById("showHotelsLink").addEventListener("click", showHotelDetails);
   
 });
+
+function toggleSpeakers() {
+	const speakerCards = document.getElementById('speakerCards');
+	const toggleButton = document.getElementById('toggleSpeakerCards');
+	if (toggleButton.innerText === 'More ↓') {
+	  speakerCards.style.maxHeight = `${speakerCards.scrollHeight}px`;
+	  toggleButton.innerText = 'Less ↑';
+	} else {
+	  speakerCards.style.maxHeight = '760px'; // Set back to the original max height
+	  toggleButton.innerText = 'More ↓';
+	}
+  }
 
 function renderCards(containerId, items) {
 	const container = document.getElementById(containerId);
@@ -210,20 +225,6 @@ function showHotelDetails(event) {
 	  ]
 	};
   
-	// function renderAgendaDay(containerId, dayItems) {
-	//   const container = document.getElementById(containerId);
-	//   let content = `<h2>${containerId === 'day1Card' ? 'Day 1' : 'Day 2'}</h2><ul>`;
-	//   dayItems.forEach(item => {
-	// 	// Check if item is a sub-section
-	// 	const isSubSection = ["Foundational Models", "Materials & Knowledge Discovery", "Data & Software Infrastructures", "Future Labs"].includes(item);
-	// 	content += `<li${isSubSection ? ' class="sub-section"' : ''}>${item}</li>`;
-	//   });
-	//   content += '</ul>';
-	//   container.innerHTML = content;
-	// }
-  
-	// renderAgendaDay('day1Card', agenda.day1);
-	// renderAgendaDay('day2Card', agenda.day2);
   });
   
   
