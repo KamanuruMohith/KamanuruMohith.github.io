@@ -13,7 +13,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f7fa;
+    /* background-color: #f4f7fa; */
     line-height: 1.5;
 }
 a {
@@ -97,8 +97,7 @@ p {
 #header .header {
 	min-height: 3vh;
 	max-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
-	transition: 0.3s ease background-color;
+	background-color: rgb(41, 50, 60);
 }
 #header .nav-bar {
 	display: flex;
@@ -158,8 +157,8 @@ p {
 	color: rgb(20, 157, 220);
 }
 #header .hamburger {
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	display: inline-block;
 	border: 3px solid white;
 	border-radius: 50%;
@@ -260,6 +259,8 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #ffffff;
+	
 }
 #hero::after {
 	content: '';
@@ -268,7 +269,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgb(3, 27, 50);
+	/* background-color: #f4f7fa; */
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -306,7 +307,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: rgb(20, 160, 220);
+	background-color: #1f204e;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -666,12 +667,12 @@ p {
 }
 @keyframes text_reveal {
 	100% {
-		color: white;
+		color: rgb(41, 50, 60);
 	}
 }
 @keyframes text_reveal_name {
 	100% {
-		color: rgb(20, 157, 220);
+		color: rgb(41, 50, 60);
 		font-weight: 500;
 	}
 }
@@ -1521,7 +1522,7 @@ p {
 	font-size: 2.5rem; /* Adjust the font size to fit the content */
 	margin: 0; /* Remove default margins */
 	line-height: 1.2; /* Adjust line height for better readability */
-	color: #ffffff; /* Set text color */
+	color: #1f204e; /* Set text color */
 	overflow: hidden; /* Hide overflowed text */
 	text-overflow: ellipsis; /* Add ellipsis to overflowed text */
   }
@@ -1552,7 +1553,7 @@ p {
 	font-size: 2.5rem; /* Adjust the font size as needed */
 	margin-bottom: 20px; /* Increase the bottom margin to add space between headings */
 	line-height: 1.1; /* Adjust line height for better readability */
-	color: #ffffff; /* Maintain text color */
+	color: #1f204e; /* Maintain text color */
   }
   
   /* If you have separate h1, h2, etc., you can add margins specifically like: */
