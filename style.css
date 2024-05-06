@@ -13,7 +13,6 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    /* background-color: #f4f7fa; */
     line-height: 1.5;
 }
 a {
@@ -370,10 +369,10 @@ p {
   }
   
   .card img {
-	width: 100%; /* Ensures the image width fits the container */
-	height: 160px; /* Adjusted height, set this to ensure consistency */
-	object-fit: cover; /* Ensures the image covers the area nicely */
-	border-radius: 5px; /* Optional: Adds rounded corners to the image */
+	width: 100%; 
+	height: 160px; 
+	object-fit: cover; 
+	border-radius: 5px; 
   }
   
   .card-container {
@@ -401,8 +400,8 @@ p {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	width: 240px; /* Adjusted width, you can change it as per your layout needs */
-	min-height: 320px; /* Adjusted height, ensure it's enough for your content + image */
+	width: 240px;
+	min-height: 320px;
   }
   
   #services .service-item::after {
@@ -418,16 +417,16 @@ p {
   }
   
   #services .service-item img {
-	width: 100%; /* Ensures the image width fits the container */
-	height: 160px; /* Adjusted height, set this to ensure consistency */
-	object-fit: cover; /* Ensures the image covers the area nicely */
-	border-radius: 5px; /* Optional: Adds rounded corners to the image */
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 5px; 
   }
   
   #services .service-item h2 {
 	font-size: 2rem;
 	color: white;
-	margin: 10px 0; /* Adjusted margin for spacing */
+	margin: 10px 0; 
   }
   
   #services .service-item p {
@@ -517,7 +516,6 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	/* padding: 100px 20px; */
 }
 #about .col-left {
 	width: 250px;
@@ -567,7 +565,6 @@ p {
 	width: 90%;
 }
 #contact .contact-items {
-	/* max-width: 400px; */
 	width: 100%;
 }
 #contact .contact-item {
@@ -799,7 +796,6 @@ p {
 	/* End contact  */
 }
 
-/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -904,7 +900,6 @@ p {
 }
 /* End Media Query For Tablet */
 
-/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
@@ -933,7 +928,6 @@ p {
 		margin: 1.5%;
 	}
 
-	/* Base modal styles */
 	.modal {
 		display: none;
 		position: fixed;
@@ -947,7 +941,6 @@ p {
 		backdrop-filter: blur(8px);
 	}
 	
-	/* Modal content */
 	.modal-content {
 		position: relative;
 		background-color: #ffffff;
@@ -962,7 +955,6 @@ p {
 		line-height: 1.6; 
 	}
 
-	/* Modal Heading */
 	.modal-content h2 {
 		font-size: 24px;
 		color: #0056b3;
@@ -971,12 +963,10 @@ p {
 		padding-bottom: 10px;
 	}
 
-	/* Hotel Details Paragraphs */
 	.modal-content p {
 		margin-bottom: 15px;
 	}
 	
-	/* Hotel Names */
 	.modal-content p strong {
 		display: block; 
 		font-size: 18px; 
@@ -984,7 +974,6 @@ p {
 		margin-bottom: 5px; 
 	}
 	
-	/* Links */
 	.modal-content a {
 		color: #007bff; 
 		text-decoration: none; 
@@ -995,24 +984,20 @@ p {
 		color: #0056b3; 
 	}
 	
-	/* Contact Details */
 	.modal-content .contact-detail {
 		font-size: 14px; 
 		color: #666; 
 	}
 	
-	/* Phone Numbers */
 	.modal-content .phone {
 		color: #333;
 		font-weight: bold;
 	}
 	
-	/* Applying styles to individual elements */
 	.modal-content p.email a {
 		font-weight: bold; 
 	}
 	
-	/* Modal opening animation */
 	@keyframes scaleUp {
 		from {
 		transform: scale(0.8);
@@ -1024,7 +1009,6 @@ p {
 		}
 	}
 	
-	/* Close button */
 	.close {
 		position: absolute;
 		top: 20px;
@@ -1040,7 +1024,6 @@ p {
 		cursor: pointer;
 	}
 	
-	/* Link styles */
 	#showHotelsLink {
 		font-size: 16px;
 		text-decoration: none;
@@ -1070,31 +1053,31 @@ p {
 .day-schedule {
     flex: 1 1 400px;
     max-width: calc(50% - 20px);
-    background-color: #e3f2fd; /* Uniform background color for day schedules */
-    padding: 25px; /* Uniform padding */
+    background-color: #e3f2fd; 
+    padding: 25px; 
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(29, 71, 222, 0.2);
-    border-left: 5px solid #039be5; /* Accent border */
+    border-left: 5px solid #039be5; 
     overflow-y: auto;
-    height: 600px; /* Fixed height for scrolling */
+    height: 600px; 
     position: relative;
-    margin-bottom: 25px; /* Bottom margin for spacing between day schedules */
-    font-size: 16px; /* Uniform font size for readability */
+    margin-bottom: 25px; 
+    font-size: 16px; 
 	border: 4px solid #3576c1; 
 }
 
 .day-title {
-    font-size: 35px; /* Larger title font size */
+    font-size: 35px; 
     color: #1f204e;
-    margin-bottom: 25px; /* Increased spacing below title */
+    margin-bottom: 25px;
     text-align: center;
     font-weight: bold;
 }
 @media (max-width: 768px) {
 	.day-title {
-		font-size: 28px; /* Larger title font size */
+		font-size: 28px; 
 		color: #1f204e;
-		margin-bottom: 25px; /* Increased spacing below title */
+		margin-bottom: 25px;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -1102,7 +1085,7 @@ p {
 
 .events {
     position: relative;
-    padding-left: 30px; /* Left padding for alignment with the timeline */
+    padding-left: 30px; 
 }
 
 .time-line {
@@ -1115,37 +1098,37 @@ p {
 }
 
 .event-group {
-    margin-bottom: 35px; /* Increased spacing between session groups */
+    margin-bottom: 35px;
 }
 
 .session-heading {
-    font-size: 18px; /* Font size for session headings */
-    background-color: #1f204e; /* Background color for session headings */
-    color: #ffffff; /* Text color for session headings */
-    padding: 8px 12px; /* Padding around session headings */
+    font-size: 18px;
+    background-color: #1f204e; 
+    color: #ffffff;
+    padding: 8px 12px; 
     border-radius: 4px;
     display: inline-block;
-    margin-bottom: 15px; /* Bottom margin for spacing after session headings */
+    margin-bottom: 15px;
 }
 
 .chair {
-    font-size: 17px; /* Font size for chairs/moderators */
-    color: #1c2b61; /* Text color for chairs/moderators */
+    font-size: 17px;
+    color: #1c2b61; 
     font-weight: bold;
-    display: block; /* Ensure it's on a new line */
-    margin-bottom: 10px; /* Bottom margin for spacing after chair/moderator name */
+    display: block; 
+    margin-bottom: 10px; 
 }
 
 .sub-session {
-    margin-left: 25px; /* Indentation for sub-sessions */
-    padding-left: 15px; /* Padding for alignment within sub-sessions */
-    border-left: 2px solid #81d4fa; /* Visual cue for sub-session grouping */
-    margin-bottom: 15px; /* Spacing between sub-sessions */
+    margin-left: 25px; 
+    padding-left: 15px; 
+    border-left: 2px solid #81d4fa; 
+    margin-bottom: 15px; 
 }
 
 .time-event, .time, .participant {
-    font-size: 16px; /* Uniform font size for times and participants */
-    margin-bottom: 8px; /* Spacing between time/participant entries */
+    font-size: 16px; 
+    margin-bottom: 8px; 
 }
 
 .day-schedule::-webkit-scrollbar {
@@ -1185,14 +1168,13 @@ p {
 /* End  Media Query For Desktop */
 
 .sub-section {
-	margin-left: 30px; /* Adjust the indentation as needed */
+	margin-left: 30px; 
   }
 
-/* ... your existing CSS ... */
 
 #speakerCards {
-	/* Adjust max-height so 2.5 rows are visible */
-	max-height: 760px; /* e.g., if each card (with margin) is 320px tall */
+	
+	max-height: 760px; 
 	overflow: hidden;
 	transition: max-height 0.3s ease;
   }
@@ -1205,27 +1187,26 @@ p {
 	padding: 10px 20px;
 	cursor: pointer;
 	margin-top: 20px;
-	display: block; /* to make it a block-level element */
+	display: block; 
 	margin-left: auto;
 	margin-right: auto;
   }
   
   #toggleSpeakerCards:hover {
-	background-color: #09223b; /* Darker shade on hover */
-	transform: translateY(-2px); /* Slight lift effect */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+	background-color: #09223b; 
+	transform: translateY(-2px); 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   #toggleSpeakerCards:active {
-	background-color: #1d4561; /* Even darker shade when clicked */
-	transform: translateY(1px); /* Push down effect */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow for depth */
+	background-color: #1d4561; 
+	transform: translateY(1px); 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
 
   #presenterCards {
-	/* Adjust max-height so 2.5 rows are visible */
-	max-height: 760px; /* e.g., if each card (with margin) is 320px tall */
+	max-height: 760px; 
 	overflow: hidden;
 	transition: max-height 0.3s ease;
   }
@@ -1238,21 +1219,20 @@ p {
 	padding: 10px 20px;
 	cursor: pointer;
 	margin-top: 20px;
-	display: block; /* to make it a block-level element */
+	display: block; 
 	margin-left: auto;
 	margin-right: auto;
   }
   
   #togglePresenterCards:hover {
-	background-color: #09223b; /* Darker shade on hover */
-	transform: translateY(-2px); /* Slight lift effect */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+	background-color: #09223b; 
+	transform: translateY(-2px); 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   #togglePresenterCards:active {
-	background-color: #1d4561; /* Even darker shade when clicked */
-	transform: translateY(1px); /* Push down effect *
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow for depth */
+	background-color: #1d4561;
+	transform: translateY(1px); 
   }
 
   .hotel-tabs {
@@ -1266,36 +1246,34 @@ p {
 	padding: 10px;
 	margin: 5px;
 	text-align: center;
-	flex-grow: 1; /* To distribute space evenly */
+	flex-grow: 1; 
   }
   
   .tab img {
-	width: 100%; /* Set width to fit the tab, may need adjustment */
-	max-height: 100px; /* Set a max-height for images */
-	object-fit: cover; /* Keep aspect ratio of image */
+	width: 100%;
+	max-height: 100px; 
+	object-fit: cover; 
   }
   
   .tab h3 {
-	font-size: 1rem; /* Adjust size as necessary */
-	margin: 5px 0; /* Space between the title and the image */
+	font-size: 1rem; 
+	margin: 5px 0;
   }
   
   .tab p {
-	font-size: 0.8rem; /* Smaller text for the contact details */
-	margin: 5px 0; /* Space between paragraphs */
+	font-size: 0.8rem; 
+	margin: 5px 0; 
   }
   
   .tab p a {
-	color: #3576c1; /* Style for email links */
+	color: #3576c1; 
   }
   
-  /* Optional: Style for hover effect on tabs */
   .tab:hover {
 	background-color: #f4f4f4;
 	transition: background-color 0.3s ease;
   }
   
-  /* Optional: Style to improve the look of the email link when printed */
   @media print {
 	.tab p a::after {
 	  content: " (" attr(href) ")";
@@ -1304,7 +1282,6 @@ p {
   
   
 
-  /* General styles for about section */
 .about .col-right {
 	max-width: 700px;
 	margin: -20px;
@@ -1327,7 +1304,7 @@ p {
   .tab {
 	cursor: pointer;
 	background-color: #f7f7f7;
-	border-left: 5px solid #3576c1; /* Blue accent on the side */
+	border-left: 5px solid #3576c1; 
 	padding: 15px;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1341,7 +1318,7 @@ p {
   }
   
   .tab h3 {
-	color: #3576c1; /* Blue theme for titles */
+	color: #3576c1; 
 	margin-bottom: 10px;
 	font-size: 1.2em;
   }
@@ -1351,7 +1328,7 @@ p {
   }
   
   .hotel-info span {
-	display: block; /* Stack info vertically */
+	display: block;
 	margin: 5px 0;
   }
   
@@ -1366,10 +1343,9 @@ p {
   
   .hotel-info i {
 	color: #3576c1;
-	width: 20px; /* Ensure icons align nicely */
+	width: 20px; 
   }
   
-  /* Responsive behavior for smaller screens */
   @media (max-width: 768px) {
 	.hotel-tabs {
 	  flex-direction: column;
@@ -1390,28 +1366,27 @@ p {
   
   .about-workshop h2 {
 	font-size: 2em;
-	color: #333; /* A darker color for the subtitle */
+	color: #333; 
 	margin-bottom: 20px;
   }
   
   .about-workshop p {
 	font-size: 1em;
-	line-height: 1.6; /* For better readability */
-	color: #555; /* A softer color for the body text */
-	max-width: 800px; /* Max width for optimal reading length */
+	line-height: 1.6; 
+	color: #555;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left; /* Left-align the paragraph text */
+	text-align: left;
   }
   
-  /* Responsive design adjustments */
   @media (max-width: 768px) {
 	.section-title {
-	  font-size: 2em; /* Slightly smaller title on small screens */
+	  font-size: 2em; 
 	}
   
 	.about-workshop p {
-	  font-size: 0.9em; /* Slightly smaller paragraph text on small screens */
+	  font-size: 0.9em; 
 	}
   }
 
@@ -1439,13 +1414,12 @@ p {
 	max-width: 800px;
   }
   
-  /* Media Query for Tablets */
 @media only screen and (max-width: 768px) {
 	#services .service-item {
-	  flex-basis: 40%; /* Each service item takes the full width */
-	  margin: 10px 0; /* Adds some vertical margin for spacing */
-	  padding: 20px; /* Adjust padding for better readability */
-	  text-align: center; /* Center the text for better alignment */
+	  flex-basis: 40%; 
+	  margin: 10px 0;
+	  padding: 20px;
+	  text-align: center;
 	}
 	#services .card {
 		box-shadow: 0 4px 8px 0 rgba(29, 71, 222, 0.2);
@@ -1453,123 +1427,287 @@ p {
 		width: 173px;
   }
   
-  /* Media Query for Small Desktops/Large Tablets */
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
 	#services .service-item {
-	  flex-basis: 48%; /* Adjust so two items can fit in a row */
-	  margin: 2.5%; /* Provide some spacing around items */
-	  padding: 25px; /* Slightly increase padding */
-	  text-align: left; /* Align text to the left */
+	  flex-basis: 48%; 
+	  margin: 2.5%; 
+	  padding: 25px; 
+	  text-align: left;
 	}
   }
   
-  /* Media Query for Desktops */
   @media only screen and (min-width: 1025px) {
 	#services .service-item {
-	  flex-basis: 30%; /* Adjust so more items can fit in a row */
-	  margin: 1.5%; /* Fine-tune margins for spacing */
-	  padding: 30px; /* Increase padding for larger screens */
-	  text-align: left; /* Keep text aligned to the left */
+	  flex-basis: 30%; 
+	  margin: 1.5%; 
+	  padding: 30px; 
+	  text-align: left;
 	}
   }
 }
 @media screen and (max-width: 560px) {
 	.col-left {
-	  display: none; /* This will hide the left column containing the image on screens smaller than 360px */
+	  display: none;
 	}
   }
   
   @media print {
 	.col-left {
-	  display: none; /* This will also ensure the left column is not printed, regardless of screen size */
+	  display: none; 
 	}
   }
  
 
   .hero.container {
 	display: flex;
-	justify-content: space-between; /* Align items to the edges */
+	justify-content: center; 
 	align-items: center;
-	max-width: 1400px; /* Adjust based on your design preference */
-	margin: auto; /* Center the container */
+	max-width: 1400px; 
+	margin: auto;
   }
   
   .hero-content {
 	display: flex;
+	justify-content: center; 
 	align-items: center;
+	text-align: center;
 	width: 100%;
   }
   
   .hero-logo {
-	flex-shrink: 0; /* Prevent the logo from shrinking */
-	max-width: 200px; /* Adjust the maximum width as necessary */
-	margin-right: 5%; /* Right margin for spacing */
+	flex-shrink: 0; 
+	max-width: 200px;
+	margin-right: 5%; 
   }
   
   .hero-logo img {
-	width: 100%; /* Make the image responsive within the container */
-	height: auto; /* Maintain aspect ratio */
+	width: 100%;
+	height: auto; 
   }
   
   .hero-text {
-	flex-grow: 1; /* Allow the text to grow and fill available space */
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* Align text in the center vertically */
+	justify-content: center; 
+	align-items: center;
   }
   
   .hero-text h1 {
-	font-size: 2.5rem; /* Adjust the font size to fit the content */
-	margin: 0; /* Remove default margins */
-	line-height: 1.2; /* Adjust line height for better readability */
-	color: #1f204e; /* Set text color */
-	overflow: hidden; /* Hide overflowed text */
-	text-overflow: ellipsis; /* Add ellipsis to overflowed text */
+	font-size: 2.5rem; 
+	margin: 0; 
+	line-height: 1.2; 
+	color: #1f204e; 
+	overflow: hidden; 
   }
   
   @media (max-width: 1024px) {
 	.hero.container {
-	  padding: 0 20px; /* Reduce horizontal padding on smaller screens */
+	  padding: 0 20px; 
 	}
   
 	.hero-content {
-	  flex-direction: column; /* Stack logo and text on smaller screens */
+	  flex-direction: column; 
 	}
   
 	.hero-logo {
-	  margin: 0 0 20px 0; /* Adjust margin for the stacked layout */
-	  max-width: 180px; /* Adjust the logo size on smaller screens */
+	  margin: 0 0 20px 0; 
+	  max-width: 180px; 
 	}
   
 	.hero-text h1 {
-	  font-size: 1.8rem; /* Reduce the font size on smaller screens */
-	  text-align: left; /* Center the text */
+	  font-size: 1.8rem;
+	  text-align: left; 
 	}
+	.hero-text {
+		align-items: left;
+	  }
   }
   
 
 
   .hero-text h1 {
-	font-size: 2.5rem; /* Adjust the font size as needed */
-	margin-bottom: 20px; /* Increase the bottom margin to add space between headings */
-	line-height: 1.1; /* Adjust line height for better readability */
-	color: #1f204e; /* Maintain text color */
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	line-height: 1.1; 
+	color: #1f204e; 
   }
   
-  /* If you have separate h1, h2, etc., you can add margins specifically like: */
   .hero-text h1 {
-	margin-bottom: 15px; /* Space below the main title */
+	margin-bottom: 15px;
+	text-align: center;
   }
   
   .hero-text h2 {
-	margin-bottom: 15px; /* Space below the subtitle or secondary title */
+	margin-bottom: 15px; 
   }
   
-  /* For smaller screens */
   @media (max-width: 768px) {
 	.hero-text h1 {
-	  font-size: 1.5rem; /* Smaller font size for smaller screens */
-	  margin-bottom: 15px; /* Slightly reduce bottom margin on small screens */
+	  font-size: 1.5rem; 
+	  margin-bottom: 15px;
 	}
   }
+
+#sponsors {
+  text-align: center;
+  background-color: #f4f4f4; 
+}
+
+#sponsors .section-title {
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+#sponsors .sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#sponsors .sponsor-logos img {
+  max-width: 150px; 
+  height: auto;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  #sponsors .sponsor-logos img {
+    max-width: 100px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+#sponsors {
+	text-align: center;
+	padding-top: 75px;
+	background-color: #ffffff; 
+  }
+  
+  #sponsors .container {
+	display: block;
+  }
+  
+  #sponsors .section-title {
+	margin-bottom: 20px; 
+	color: #333; 
+  }
+  
+  #sponsors .sponsor-logos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	justify-content: center; 
+	align-items: center;
+	gap: 20px; 
+  }
+  
+  #sponsors .sponsor-logos img {
+	max-width: 300px; 
+	height: auto; 
+	margin: 20px; 
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+	#sponsors .sponsor-logos img {
+	  max-width: 140px; 
+	  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+  }
+  
+  .registration-button-container {
+    text-align: center; 
+}
+
+.modal-button {
+	background-color: #3576c1; 
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .modal-button:hover {
+	background-color: #09223b; 
+  }
+  
+  .modal {
+	display: none; 
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto; 
+	background-color: rgba(0,0,0,0.4);
+	animation-name: fadeIn;
+	animation-duration: 0.4s;
+  }
+  
+  .modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: 10% auto;
+	padding: 10px;
+	border: 1px solid #888;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+	animation-name: slideIn;
+	animation-duration: 0.4s;
+  }
+  
+  .close {
+	color: #aaa;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  .modal-content iframe {
+	width: 100%; 
+	height: 80vh; 
+	border: none; 
+  }
+
+  @media (max-width: 600px) {
+	.modal-content {
+	  width: 95%; 
+	  margin: 10px auto;
+	}
+	.modal-content iframe {
+	  height: 70vh; 
+	}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
+  
+  @keyframes slideIn {
+	from {top: -300px; opacity: 0}
+	to {top: 10%; opacity: 1}
+  }
+  
+  
   
