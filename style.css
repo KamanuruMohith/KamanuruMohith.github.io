@@ -1568,14 +1568,14 @@ p {
 }
 
 #sponsors .sponsor-logos img {
-  max-width: 150px; 
+  max-width: 450px; 
   height: auto;
   margin: 10px;
 }
 
 @media (max-width: 768px) {
   #sponsors .sponsor-logos img {
-    max-width: 100px;
+    max-width: 200px;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
@@ -1604,7 +1604,7 @@ p {
   }
   
   #sponsors .sponsor-logos img {
-	max-width: 300px; 
+	max-width: 450px; 
 	height: auto; 
 	margin: 20px; 
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -1612,7 +1612,7 @@ p {
   
   @media (max-width: 768px) {
 	#sponsors .sponsor-logos img {
-	  max-width: 140px; 
+	  max-width: 200px; 
 	  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	}
   }
